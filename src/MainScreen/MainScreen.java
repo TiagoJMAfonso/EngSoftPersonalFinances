@@ -62,9 +62,9 @@ public class MainScreen extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
+                .addContainerGap(72, Short.MAX_VALUE)
                 .addComponent(btnAuth)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 109, Short.MAX_VALUE)
+                .addGap(68, 68, 68)
                 .addComponent(btnCriarUser)
                 .addGap(78, 78, 78))
         );
@@ -73,11 +73,13 @@ public class MainScreen extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAuthActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAuthActionPerformed
-          new ScreenAuthenticar.Perfiles().setVisible(true);
+        this.setVisible(false);
+        new ScreenAuthenticar.Perfiles().setVisible(true);
     }//GEN-LAST:event_btnAuthActionPerformed
 
     private void btnCriarUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCriarUserActionPerformed
-            new CreateProfileScreen.CreateProfile().setVisible(true);
+        this.setVisible(false);
+        new CreateProfileScreen.CreateProfile().setVisible(true);
     }//GEN-LAST:event_btnCriarUserActionPerformed
 
     /**

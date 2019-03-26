@@ -124,6 +124,7 @@ public class CreateProfile extends javax.swing.JFrame {
 
     private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
        this.setVisible(false);
+       new MainScreen.MainScreen().setVisible(true);
     }//GEN-LAST:event_btnVoltarActionPerformed
 
     private void txtIdadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIdadeActionPerformed
