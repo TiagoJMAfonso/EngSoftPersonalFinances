@@ -32,8 +32,6 @@ public class MainScreen extends javax.swing.JFrame {
         btnAuth = new javax.swing.JButton();
         btnCriarUser = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
         btnAuth.setText("Autenticação");
         btnAuth.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,7 +71,8 @@ public class MainScreen extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAuthActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAuthActionPerformed
-        this.setVisible(false);
+      
+       
         new ScreenAuthenticar.Perfiles().setVisible(true);
     }//GEN-LAST:event_btnAuthActionPerformed
 

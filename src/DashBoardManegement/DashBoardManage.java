@@ -31,8 +31,6 @@ public class DashBoardManage extends javax.swing.JFrame {
         btnDebitoMensal = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
         btnCreditoMensal.setText("Credito Mensal");
 
         btnDebitoMensal.setText("Debito Mensal");
