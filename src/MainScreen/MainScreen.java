@@ -5,6 +5,8 @@
  */
 package MainScreen;
 
+import ScreenAuthenticar.Perfiles;
+
 /**
  *
  * @author Tiago
@@ -40,6 +42,11 @@ public class MainScreen extends javax.swing.JFrame {
         });
 
         btnCriarUser.setText("Criar Perfil");
+        btnCriarUser.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCriarUserActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -66,8 +73,12 @@ public class MainScreen extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAuthActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAuthActionPerformed
-        // TODO add your handling code here:
+          new ScreenAuthenticar.Perfiles().setVisible(true);
     }//GEN-LAST:event_btnAuthActionPerformed
+
+    private void btnCriarUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCriarUserActionPerformed
+            new CreateProfileScreen.CreateProfile().setVisible(true);
+    }//GEN-LAST:event_btnCriarUserActionPerformed
 
     /**
      * @param args the command line arguments
